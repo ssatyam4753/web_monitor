@@ -11,7 +11,7 @@ public class Compare {
 			
 			System.out.println("in the compare method");
 			
-			File f1=new File("H:/permanent_file.html");
+			File f1=new File(name);
 			File f2=new File("H:/temp_file.html");
 			
 			

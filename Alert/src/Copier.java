@@ -30,6 +30,8 @@ public class Copier {
 		String strurl = str;
 		File f1,f2;
 		FileOutputStream fout1,fout2;
+		String file_name = "H:/"+u_name+".html";
+		System.out.println(file_name);
 		try{
 			Class.forName("com.mysql.jdbc.Driver");	
 			Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/alert","root","");
@@ -51,16 +53,16 @@ public class Copier {
 			is=url.openStream();
 			br= new BufferedReader(new InputStreamReader(is));
 			
-			f1=new File("H:/permanent_file.html");
+			f1=new File(file_name);
 			f2=new File("H:/temp_file.html");
 
 			fout1 = new FileOutputStream(f1,false);
 			fout2 = new FileOutputStream(f2,false);
 			
 			if(flag_update==1){
+				System.out.println("creating file"+u_name);
+				System.out.println("writing into file"); 
 				while((line = br.readLine()) !=null){
-					System.out.println("creating file"+u_name);
-					System.out.println("writing into file");
 					System.out.println(line);
 					fout1.write(line.getBytes());
 				}
@@ -71,7 +73,7 @@ public class Copier {
 					fout2.write(line.getBytes());
 				}
 				Compare cmp = new Compare();
-				int flag=cmp.compare("H:/"+u_name+".html");
+				int flag=cmp.compare(file_name);
 				System.out.println("back in copier");
 				{
 					if(flag==1){

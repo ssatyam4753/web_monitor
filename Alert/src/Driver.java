@@ -11,7 +11,9 @@ public class Driver extends HttpServlet {
 	public Driver() {
         super();
     }
-
+	
+                      //**get method to process user's request**//
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String url;
@@ -58,11 +60,11 @@ public class Driver extends HttpServlet {
 	public String getName(String str){
 		System.out.println("enter url");
 		try{
-		
+
 			String url = str;
 			System.out.println("url entered by you"+url);
 			byte[] Byte = url.getBytes();
-			byte[] name = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+			byte[] name = {95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95};
 			int i =0,j=0,flag=0;
 			String Name;
 			while(i<Byte.length){
@@ -78,6 +80,7 @@ public class Driver extends HttpServlet {
 				i++;
 			}
 			String str1 = new String(name);
+			str1=str1.trim();
 			return str1;
 		
 		}catch(Exception e){
@@ -91,5 +94,4 @@ public class Driver extends HttpServlet {
 		doGet(request, response);
 	
 	}
-
 }

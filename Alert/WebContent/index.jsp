@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
 	<title>web alerts</title>
 	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
         function validate_login() {
             var x = document.getElementById("email").Value;
             var y = document.getElementById("password").Value;
@@ -13,7 +15,7 @@
                 return false;
             }
         }
-    </script>-->
+    </script>
 </head>
 
 <body>
@@ -41,17 +43,10 @@
 			</form>
 
 			<ul class="nav navbar-nav navbar-right">
-				<form action="login" method="post" class="form-inline navbar-left" role="form">
-
-					<div class="form-group">
-						<label class="sr-only" for="">login</label>
-						<input type="username" class="form-control" name="username" placeholder="username">
-						<input type="password" class="form-control" name="password" placeholder="password">
-						<input type="submit" class="btn btn-success" value="Login">
-					</div>
-
-				</form>
-				<a href="signup.html" class="btn btn-primary navbar-left">signup</a>
+				<label for="user" class="btn btn-warning navbar-left">
+					your page
+				</label>
+				
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">more <b class="caret"></b></a>
 					<ul class="dropdown-menu">
