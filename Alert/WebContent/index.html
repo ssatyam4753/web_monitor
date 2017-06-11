@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>web alerts</title>
+	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+    <!--<script type="text/javascript">
+        function validate_login() {
+            var x = document.getElementById("email").Value;
+            var y = document.getElementById("password").Value;
+            if (x == null || y == null) {
+                alert("fields can not be empty");
+                return false;
+            }
+        }
+    </script>-->
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand btn btn-success" href="index.html">Home</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse " id="menu1">
+			
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-info">Submit</button>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right">
+				<form action="login" method="post" class="form-inline navbar-left" role="form">
+
+					<div class="form-group">
+						<label class="sr-only" for="">login</label>
+						<input type="username" class="form-control" name="username" placeholder="username">
+						<input type="password" class="form-control" name="password" placeholder="password">
+						<input type="submit" class="btn btn-success" value="Login">
+					</div>
+
+				</form>
+				<a href="signup.html" class="btn btn-primary navbar-left">signup</a>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">more <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Quick read</a></li>
+                        <li><a href="#">Getting started</a></li>
+						<li><a href="#">FAQ's</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</li>
+			</ul>
+
+
+
+		</div>
+		<!-- /.navbar-collapse -->
+	</nav>
+
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h2>web alerts</h2>
+		</div>
+		<div class="row">
+
+		</div>
+		<div class="row">
+			<div class="container col-md-5 col-md-offset-1">
+				<h2>SECURITY</h2>
+                <p>we never know when a website will be hacked or it's going down,<br />it's better to be tuned. So if you don't want to keep checking 
+                your website again and again manually. use our simple, elegant and reliable service. And get notified the moment there has been a change in your website.</p>
+			</div>
+            <div class="container col-md-5 col-md-offset-1">
+                <h1>SERVICE</h1>
+                <p>Do you regularly check for notifications on your office's or college's website, Or may be you are looking for your results.
+                If you are bored of checking it repeteadily, 
+                Let our service do it for you. And get notified the moment it's declared.</p>
+            </div>
+            
+			
+		</div>
+        <div class="container">
+            <h3 class="jumbotron">
+                Sign up to start availing services...
+            </h3>
+            <h4>All you have to do is, submit us the website's url you are interested to monitor and relax. you will be notified as soon as there is any change in the website..</h4>
+        </div>
+	</div>
+	
+		
+	
+	
+	<script src="./scripts/jquery-3.2.1.min.js"></script>
+	<script src="./scripts/bootstrap.min.js"></script>
+
+</body>
